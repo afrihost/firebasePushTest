@@ -5174,8 +5174,10 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-"react-native-firebase-push-notifications@file:../NativeModules/react-native-firebase-push-notifications":
-  version "0.0.7"
+react-native-firebase-push-notifications@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-firebase-push-notifications/-/react-native-firebase-push-notifications-0.0.8.tgz#e40dd7047decbf42cc3419c00ae776a590fbf0f4"
+  integrity sha512-rtpUIvXl6k11W83VIilOe26kkF26r6u1Z21hU4psYKJz98jGGiskgwJBCxCl5pcLbh7thLyp9x39hoXXMIs/Vw==
   dependencies:
     lodash "^4.17.11"
 
