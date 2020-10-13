@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import { View, Text, TouchableOpacity } from "react-native"
 import {
   notifications,
-  messages
+  messages,
+  NotificationMessage,
+  Android
 } from "react-native-firebase-push-notifications"
 
 class RootContainer extends Component {
@@ -152,7 +154,7 @@ class RootContainer extends Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={{
-              backgroundColor: "red",
+              backgroundColor: "green",
               flex: 1,
               alignContent: "center",
               alignItems: "center",
@@ -161,6 +163,38 @@ class RootContainer extends Component {
             onPress={() => this.requestPermission()}
           >
             <Text>Get permission</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: "orange",
+              flex: 1,
+              alignContent: "center",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+            onPress={async () => {
+              const channel = new Android.Channel(
+                "test-channel",
+                "Test Channel",
+                Android.Importance.Max
+              ).setDescription("My apps test channel")
+
+              // Create the channel
+              notifications.android().createChannel(channel)
+              const c = await notifications.displayNotification(
+                new NotificationMessage()
+                  .setNotificationId("notification-id")
+                  .setTitle("Notification title")
+                  .setBody("Notification body")
+                  .setData({
+                    key1: "key1",
+                    key2: "key2"
+                  })
+                  .android.setChannelId("test-channel")
+              )
+            }}
+          >
+            <Text>display notification</Text>
           </TouchableOpacity>
         </View>
       </View>
