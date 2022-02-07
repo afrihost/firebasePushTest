@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-firebase-push-notifications": "^0.0.10"
+    "react-native-firebase-push-notifications": "https://github.com/Technaur/react-native-firebase-push-notifications"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
