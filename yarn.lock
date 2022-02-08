@@ -5751,10 +5751,9 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-firebase-push-notifications@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-firebase-push-notifications/-/react-native-firebase-push-notifications-1.0.0.tgz#fb354ade4cf87f8ab2fb21ec4288e40b4f84f78b"
-  integrity sha512-8EgmDeWuSTZ6OrGKzAr9LT8UaFdLzKjOltTuVwk+RW+GY2fOHSfde9rWCeFaEqL8QhhHvMJV/a5Ys9rTWMjL8Q==
+"react-native-firebase-push-notifications@https://github.com/Technaur/react-native-firebase-push-notifications.git":
+  version "2.0.0"
+  resolved "https://github.com/Technaur/react-native-firebase-push-notifications.git#d5d59c8fca2f38fe2fb39c46e444a35bd35dbdad"
   dependencies:
     lodash "^4.17.11"
 
