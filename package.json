@@ -15,7 +15,7 @@
     "react-native-firebase-push-notifications": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.29.6",
     "@babel/runtime": "^7.26.10",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-eslint": "^10.0.2",
